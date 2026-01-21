@@ -13,3 +13,8 @@ title: 駐在じゃないほうのアメリカ生活ブログ
 （贅沢はできないけれど、美味しく食べたい。買い物攻略法）
 
 などなど書いていけたらと思います！
+
+## 最新の記事
+{% for post in site.posts %}
+* {{ post.date | date: "%Y/%m/%d" }} - [{{ post.title }}]({{ post.url }})
+{% endfor %}
